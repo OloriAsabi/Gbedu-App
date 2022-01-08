@@ -16,8 +16,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ### Connect with me:
 
 
-[<img align="left" alt="OLORIASABI.com" width="22px" src="https://raw.githubusercontent.com/OloriAsabi/book-images/main/src/PROGRAM/2.png" />][www.oloriasabi.com]
-[<img align="left" alt="oloriasabi | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][https://www.twitter.com/olorii_ashabi]
+[<img align="left" alt="OLORIASABI.com" width="22px" src="https://raw.githubusercontent.com/OloriAsabi/book-images/main/src/PROGRAM/2.png" />www.oloriasabi.com]
+[<img align="left" alt="oloriasabi | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />https://www.twitter.com/olorii_ashabi]
 [<img align="left" alt="oloriasabi | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][http://linkedin.com/in/ashabilateefatoduntan]
 [<img align="left" alt="oloriasabi | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][https://www.instagram.com/olori_asabi]
 
