@@ -1,0 +1,16 @@
+.search-text{
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+}
+.search-text label{
+    font-size: 2rem;
+    font-weight: 100;
+}
+.bg-black{
+    background-color: #222;
+}
+.text-black{
+    color: #222;
+    text-transform: capitalize;
+    font-style: normal;
+}
