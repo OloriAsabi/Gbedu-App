@@ -13,12 +13,12 @@ export class SpotifyService {
   responseText: ResponseText | undefined;
 
 
-  client_id = "d448399b4a56442d86fbeddcd7aa3b87";
+  client_id = "31clhg3tbaqbdcdombp2cwa5h2je";
   client_secret = "fd8e594076c24906aad50c19ff57b24a";
   redirectedUri = "http://localhost:4200/callback";
   authorizeUrl = "https://accounts.spotify.com/authorize";
   tokenUrl = "https://accounts.spotify.com/api/token";
-  public accessToken: any = "Bearer BQBg5E54xwW_pZvHFjJ-aY6HsX4V_67kZpFeYuWFUy68VvWeFt4j0Gf-Xp0YoX4HPD2Es-wOFBccJqX4dswrWZkkPbzlW0Ot4qC0sz4vLTqVqt0LYiqfG_UdoY1rnyRuoUN5u7e42ZqWSR_fjnVc9VqX9OxwOJ7ZArjjtxxfpgY13BM1Kbp53lcFfzs";
+  public accessToken: any = "Bearer BQCkQdGDgLfvgeEV-7-KAwXZYQKwWvp3BGjqP1V0nvNlkyhr4SrF43Y-RqU-GFLjjttO98OXrIr1t8awOenJxfjFfjlYGZSHUVmnFuIKoBIIfGiVwda6LwyKCjg1SzhhFp1gltoh8vvFcwgyEMqLej7W_YccPHN58v_3-se3U3VJvSUfVH1gIelpGu8";
 
 
 
@@ -39,17 +39,17 @@ export class SpotifyService {
 
   constructor(private _httpClient:HttpClient) { }
 
-  searchMusic(str:string,){
-    let searchUrl = `https://api.spotify.com/v1/search?q=${str}&type=artist`;
-    return this._httpClient.get<any>(searchUrl, this.httpOptions)
-    .pipe(map((res: any ) => res.json()))
-  }
+  
 
   public getAllArtists(searchStr :string, type="artist"):Observable<IArtist>{
     let searchUrl = `https://api.spotify.com/v1/search?q=${searchStr}&type=artist`;
-    return this._httpClient.get<IArtist>(searchUrl, this.httpOptions)
+    return this._httpClient.get<any>(searchUrl, this.httpOptions)
   }
 
+  public getArtist(artistId:any):Observable<any>{
+    let artistUrl = `https://api.spotify.com/v1/artists/${artistId}`;
+    return this._httpClient.get<any>(artistUrl, this.httpOptions)
+  }
 
   requestAuthorization(): void {
     let authUrl = this.authorizeUrl; 

@@ -12,13 +12,10 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
-  artist: IArtist [] = [];
 
-  public searchStr:any = null;
+  public searchStr:any ;
 
-  artists = '';
- 
-  access_token: any = 'BQChwHhO_HS1AmJB7nx_MeRPEamgfwmklxVonl4-9rhPfHmR88cQAvEtgW0odGttdwV9ErgTrXVn1IwAHMWI0tpxoCrWmioSgL5ELssEZ4zSafcnUjNUsOln6QtPhVyt5fRhmZO8AOJXq0aiTmmPnX78JAoHAiz72ORy5A0deKYmW2xfmhANuW4hJek';
+ public artists : any;
 
 
   constructor(public _spotifyService:SpotifyService) { }
@@ -29,8 +26,8 @@ export class SearchComponent implements OnInit {
   
   searchMusic(){
     this._spotifyService.getAllArtists(this.searchStr)
-    .subscribe((res: any) => { 
-      this.artists = res.artists.items
+    .subscribe((data: any) => { 
+      this.artists = data.artists.items;
     })
   }
 

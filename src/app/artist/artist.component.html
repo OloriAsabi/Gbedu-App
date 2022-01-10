@@ -1,1 +1,42 @@
-<p>artist works!</p>
+<section class="p-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-primary text-black">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img [src]="artist.images[0].url" alt="" class="img-fluid img-thumbnail">
+                            </div>
+                            <div class="col-md-9">
+                                <h3 class="display-3">{{artist.name}}</h3>
+                                <p class="h3">Genres : <span class="badge badge-success mr-2" *ngFor="let genre of artist.genres">
+                                    {{genre}}
+                                </span></p>
+                                <p>
+                                    Followers : {{artist.followers.total | number}}
+                                </p>
+                                <button class="btn btn-outline-white btn-sm"><a href="/search">Back</a></button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-body bg-secondary text-black text-center">
+                                        <img/>
+                                      <h3 class="mt-2">Album Name</h3>
+                                      <a href="/" class="btn btn-outline-white">View Album</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
