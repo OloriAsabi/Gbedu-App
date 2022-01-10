@@ -22,16 +22,16 @@
                     <div class="card-header bg-black text-white">
                         <h2>{{artist.name}}</h2>
                     </div>
-                    <div class="card-body ">
+                    <div class="card-body bg-black">
                         <div class="row">
                             <img [src]='artist.images[0].url' alt="artist-img" class="img-fluid img-thumbnail" />
                         </div>
-                        <div class="col-md-9 text-black">
+                        <div class="col-md-9">
                             <h4 class="display-3">
                                 <a href="/artist/{{artist.id}}">{{artist.name}}</a></h4>
                             <p class="h2">Follower : {{artist.followers.total |number}}</p>
                             <p class="h2">Genres : 
-                                <span class="badge badge-success mr-2" *ngFor="let genre of artist.genres">
+                                <span class="badge badge-success mr-2 " *ngFor="let genre of artist.genres">
                                     {{genre}}
                             </span></p>
                         </div>

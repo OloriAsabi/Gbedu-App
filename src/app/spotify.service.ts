@@ -6,6 +6,7 @@ import { HttpClient, HttpHeaders, HttpResponse } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -18,7 +19,7 @@ export class SpotifyService {
   redirectedUri = "http://localhost:4200/callback";
   authorizeUrl = "https://accounts.spotify.com/authorize";
   tokenUrl = "https://accounts.spotify.com/api/token";
-  public accessToken: any = "Bearer BQCkQdGDgLfvgeEV-7-KAwXZYQKwWvp3BGjqP1V0nvNlkyhr4SrF43Y-RqU-GFLjjttO98OXrIr1t8awOenJxfjFfjlYGZSHUVmnFuIKoBIIfGiVwda6LwyKCjg1SzhhFp1gltoh8vvFcwgyEMqLej7W_YccPHN58v_3-se3U3VJvSUfVH1gIelpGu8";
+  public accessToken: any = "Bearer BQBcThHYsl7MX0vsUWKMTY6CZsy64M86tOaCX-aGBFBNUOtcVzxKFT3V0MvF7tjyIQrXym8_9yb2495agJWnDAagXu-nUcXwtltkTRszkhFvVeNDzFB65se-vMT_K0kxzMhMdmv-oZlVxPQxkBSWhKdGYbEokDJbU2B8Tu8JhmVzaXuSQORS00wEI4s";
 
 
 
@@ -47,8 +48,23 @@ export class SpotifyService {
   }
 
   public getArtist(artistId:any):Observable<any>{
-    let artistUrl = `https://api.spotify.com/v1/artists/${artistId}`;
+    let albumUrl = `https://api.spotify.com/v1/artists/${artistId}`;
+    return this._httpClient.get<any>(albumUrl, this.httpOptions)
+  }
+
+  public getAllAlbum(artistId:any):Observable<any>{
+    let artistUrl = `https://api.spotify.com/v1/artists/${artistId}/albums`;
     return this._httpClient.get<any>(artistUrl, this.httpOptions)
+  }
+
+  public getAlbum(albumId:any):Observable<any>{
+    let albumUrl = `https://api.spotify.com/v1/albums/${albumId}`;
+    return this._httpClient.get<any>(albumUrl, this.httpOptions)
+  }
+
+  public getAllTracks(albumId:any):Observable<any>{
+    let tracksUrl = `https://api.spotify.com/v1/album/${albumId}/tracks`;
+    return this._httpClient.get<any>(tracksUrl, this.httpOptions)
   }
 
   requestAuthorization(): void {
