@@ -3,7 +3,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
-[![website](https://oloriasabi.github.io/gbedu-app/)]
+[website](https://oloriasabi.github.io/gbedu-app/)
 [![Twitter Follow](https://img.shields.io/twitter/follow/olorii_ashabi?color=1DA1F2&logo=twitter&style=for-the-badge)]
 
 ## I'm a Developer and DJ!!
