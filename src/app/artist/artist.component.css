@@ -1,0 +1,17 @@
+.bg-black{
+    background-color: #222;
+}
+
+.genre{
+    background-color: white;
+    color: #000;
+}
+.btn{
+    border: 1px solid black;
+    color: #000;
+    font-size: large;   
+}
+
+.btn a{
+    color: #000;
+}

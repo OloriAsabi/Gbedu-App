@@ -1,0 +1,42 @@
+<section class="p-3">
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col ">
+                <div class="card bg-black">
+                    <div class="card-header bg-white">
+                        <div class="row text-black">
+                            <div class="col-md-3">
+                                <img [src]="artist.images[0].url" alt="" class="img-fluid img-thumbnail">
+                            </div>
+                            <div class="col-md-9">
+                                <h3 class="display-3">{{artist.name}}</h3>
+                                <p class="h3">Genres : <span class="badge badge-success genre mr-2" *ngFor="let genre of artist.genres">
+                                    {{genre}}
+                                </span></p>
+                                <p>
+                                    Followers : {{artist.followers.total | number}}
+                                </p>
+                                <button class="btn btn-outline-black"><a href="/search">Back</a></button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3" *ngFor="let album of albums">
+                                <div class="card mt-3">
+                                    <div class="card-body bg-secondary text-black text-center">
+                                        <img [src]="album.images[0].url" alt="" class="img-fluid img-thumbnail"/>
+                                      <p class="mt-3">{{album.name}}</p>
+                                      <a href="/album/{{album.id}}" class="btn btn-outline-white">View Album</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

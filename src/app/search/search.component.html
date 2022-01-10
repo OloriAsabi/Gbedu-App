@@ -1,0 +1,45 @@
+<div class="container search-text text-white">
+    <h1 class="">Need Music?</h1>
+
+<p>The pandemic has taken soo much from all of us,
+    get the latest and all kinds of genre to brighten your day
+</p>
+
+<section>
+<form>
+    <div class="form-group">
+        <label for="searchStr">Search Music: </label>
+        <input type="text" name="searchStr" [(ngModel)]="searchStr" (keyup)="searchMusic()" class="form-control" placeholder="Search Music" />
+    </div>
+</form>
+</section>
+
+<section class="p-3">
+    <div class="container">
+        <div class="row" *ngFor='let artist of artists'>
+            <div class="col"  >
+                <div class="card mb-5">
+                    <div class="card-header bg-black text-white">
+                        <h2>{{artist.name}}</h2>
+                    </div>
+                    <div class="card-body bg-black">
+                        <div class="row">
+                            <img [src]='artist.images[0].url' alt="artist-img" class="img-fluid img-thumbnail" />
+                        </div>
+                        <div class="col-md-9">
+                            <h4 class="display-3">
+                                <a href="/artist/{{artist.id}}" class="text-white">{{artist.name}}</a></h4>
+                            <p class="h2">Follower : {{artist.followers.total |number}}</p>
+                            <p class="h2">Genres : 
+                                <span class="badge badge-success mr-2 genre" *ngFor="let genre of artist.genres">
+                                    {{genre}}
+                            </span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+</div>
