@@ -28,10 +28,10 @@
                         </div>
                         <div class="col-md-9">
                             <h4 class="display-3">
-                                <a href="/artist/{{artist.id}}">{{artist.name}}</a></h4>
+                                <a href="/artist/{{artist.id}}" class="text-white">{{artist.name}}</a></h4>
                             <p class="h2">Follower : {{artist.followers.total |number}}</p>
                             <p class="h2">Genres : 
-                                <span class="badge badge-success mr-2 " *ngFor="let genre of artist.genres">
+                                <span class="badge badge-success mr-2 genre" *ngFor="let genre of artist.genres">
                                     {{genre}}
                             </span></p>
                         </div>

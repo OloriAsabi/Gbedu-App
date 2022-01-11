@@ -14,3 +14,11 @@
     text-transform: capitalize;
     font-style: normal;
 }
+.genre{
+    background-color: white;
+    color: #000;
+}
+
+.search:hover{
+ color: #000;
+}
