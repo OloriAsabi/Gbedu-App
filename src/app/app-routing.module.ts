@@ -12,10 +12,10 @@ const routes: Routes = [];
   imports: [RouterModule.forRoot([
 
       { path: '', component: HomeComponent},
-      { path: '/search', component: SearchComponent},
-      { path: '/about', component: AboutComponent},   
-      { path: '/artist/:id', component: ArtistComponent},
-      { path: '/album/:id', component: AlbumComponent}    
+      { path: 'search', component: SearchComponent},
+      { path: 'about', component: AboutComponent},   
+      { path: 'artist/:id', component: ArtistComponent},
+      { path: 'album/:id', component: AlbumComponent}    
   ])
 
 ],
