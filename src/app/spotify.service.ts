@@ -16,7 +16,7 @@ export class SpotifyService {
 
   client_id = "31clhg3tbaqbdcdombp2cwa5h2je";
   client_secret = "fd8e594076c24906aad50c19ff57b24a";
-  redirectedUri = "http://localhost:4200/callback";
+  redirectedUri = "https://oloriasabi.github.io/gbedu-app/callback";
   authorizeUrl = "https://accounts.spotify.com/authorize";
   tokenUrl = "https://accounts.spotify.com/api/token";
   public accessToken: any = "Bearer BQDLkn2-afrh3-QpbLdX5_V4rGQxfhSwe-AmoNcWJG__rtp98yS3bzB0r1mGDq7Q1Fz4AFh_Gn4Q3R_W-RGJv5j6CoVn8Doum_tw1feIWHt8Rz99BbVJJ8OCeAswRQEG_55Qgb_anAuSQW03Ti-3ioWKAUVH-0o7J7fnop52X0818JWEWtdm-VekaHQ";
