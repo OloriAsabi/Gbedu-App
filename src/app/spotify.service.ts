@@ -19,7 +19,7 @@ export class SpotifyService {
   redirectedUri = "http://localhost:4200/callback";
   authorizeUrl = "https://accounts.spotify.com/authorize";
   tokenUrl = "https://accounts.spotify.com/api/token";
-  public accessToken: any = "Bearer BQDLkn2-afrh3-QpbLdX5_V4rGQxfhSwe-AmoNcWJG__rtp98yS3bzB0r1mGDq7Q1Fz4AFh_Gn4Q3R_W-RGJv5j6CoVn8Doum_tw1feIWHt8Rz99BbVJJ8OCeAswRQEG_55Qgb_anAuSQW03Ti-3ioWKAUVH-0o7J7fnop52X0818JWEWtdm-VekaHQ";
+  public accessToken: any = "Bearer BQDlDbb5-3vp-nzSw0iZq4hVIhvc9SORlEQGEt7K_3F01i1c1dzgCltfrBsL7NTtOpM2Cmbe4rlTmH8GsHblq3F5cM505UiZoprQEXSjdQsLudv5LQmSizIUJKrsr-MxHZh-P8NVZVsP8cX_spCicrzwFkIguhajLRzPEHNioDbFVfXQbRm2vrpS-W8";
 
 
 
