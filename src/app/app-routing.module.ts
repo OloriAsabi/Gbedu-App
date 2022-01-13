@@ -11,8 +11,8 @@ const routes: Routes = [];
 @NgModule({
   imports: [RouterModule.forRoot([
 
-      { path: '', component: HomeComponent},
-      { path: 'search', component: SearchComponent},
+      { path: 'home', component: HomeComponent},
+      { path: '', component: SearchComponent},
       { path: 'about', component: AboutComponent},   
       { path: 'artist/:id', component: ArtistComponent},
       { path: 'album/:id', component: AlbumComponent}    
