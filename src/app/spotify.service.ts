@@ -22,7 +22,6 @@ export class SpotifyService {
   public accessToken: any = "Bearer BQCDG6QXjJO-Km_U1FPq3649AA8ry17w-JUmw7nO6nlFXrSLI49GTGmtjSASNM65R1l7Hf0rX0U03AkrKa2-3dlNEQKR57Kamj93l-qNyKxvuNpxmvZpniocyMUJzrXc4Y-hNDN2p8NjS8_-sgaUKjF8J_SOpivMmdqYg3Zxz9SbdpsuR6LiqDkDvEM";
 
 
-
                                        
   private  httpOptions = {
     headers : new HttpHeaders() 
