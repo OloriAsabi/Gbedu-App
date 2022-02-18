@@ -19,7 +19,7 @@ export class SpotifyService {
   redirectedUri = "http://localhost:4200/callback";
   authorizeUrl = "https://accounts.spotify.com/authorize";
   tokenUrl = "https://accounts.spotify.com/api/token";
-  public accessToken: any = "Bearer BQBcThHYsl7MX0vsUWKMTY6CZsy64M86tOaCX-aGBFBNUOtcVzxKFT3V0MvF7tjyIQrXym8_9yb2495agJWnDAagXu-nUcXwtltkTRszkhFvVeNDzFB65se-vMT_K0kxzMhMdmv-oZlVxPQxkBSWhKdGYbEokDJbU2B8Tu8JhmVzaXuSQORS00wEI4s";
+  public accessToken: any = "Bearer BQDCNm4Bvw8EOEgXc-LDBWGKHd2WzO5WnY9phhw1XB0H0lkNpldJcqc3-4oo-Tbq-c0lqzT4woTL700du-7I6-z_OCuL-jOkmsnct4AiErfruuZcoChRWaUHOxlSGyd2bN-ypf2yI43samcBYLcoAg6Pj9rTp8NRGZV-lX3BqIs_ijMs3dmduUDEuiM";
 
 
 
@@ -63,7 +63,7 @@ export class SpotifyService {
   }
 
   public getAllTracks(albumId:any):Observable<any>{
-    let tracksUrl = `https://api.spotify.com/v1/album/${albumId}/tracks`;
+    let tracksUrl = `https://api.spotify.com/v1/albums/${albumId}/tracks`;
     return this._httpClient.get<any>(tracksUrl, this.httpOptions)
   }
 
