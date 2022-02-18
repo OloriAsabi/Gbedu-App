@@ -10,8 +10,6 @@ const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot([
-
-      { path: 'home', component: HomeComponent},
       { path: '', component: SearchComponent},
       { path: 'about', component: AboutComponent},   
       { path: 'artist/:id', component: ArtistComponent},

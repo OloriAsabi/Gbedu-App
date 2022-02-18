@@ -22,7 +22,6 @@ import { AlbumComponent } from './album/album.component';
     NavbarComponent,
     AboutComponent,
     SearchComponent,
-    HomeComponent,
     ArtistComponent,
     AlbumComponent
   ],
