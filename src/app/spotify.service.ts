@@ -13,9 +13,8 @@ import { map } from 'rxjs/operators';
 export class SpotifyService {
   responseText: ResponseText | undefined;
 
-
   client_id = "31clhg3tbaqbdcdombp2cwa5h2je";
-  client_secret = "fd8e594076c24906aad50c19ff57b24a";
+  client_secret = 'fd8e594076c24906aad50c19ff57b24a';
   redirectedUri = "https://oloriasabi.github.io/gbedu-app/callback";
   authorizeUrl = "https://accounts.spotify.com/authorize";
   tokenUrl = "https://accounts.spotify.com/api/token";
